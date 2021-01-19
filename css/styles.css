@@ -1,0 +1,24 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+list-style-type: none;
+}
+
+h1 {
+background-color: navy;
+color: white;
+text-align: center;
+padding: 2rem 0 2rem 0;
+
+}
+
+.header2 {
+    display: block;
+    background-color: red;
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 4px solid black;
+}
