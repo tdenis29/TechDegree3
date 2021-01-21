@@ -164,5 +164,10 @@ background-color: whitesmoke;
     flex-direction: row;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: left;
+    justify-content: 
+}
+
+.container label {
+    margin: 1rem;
+}
 }
