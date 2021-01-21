@@ -2,6 +2,7 @@
 <html>
  <head>
      <link rel="stylesheet" href="css/styles.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
  <body>
     <form>
@@ -14,25 +15,28 @@
      <p>Get the Latest News on how your code is doing sent directly to your inbox</p>
     </div>
 
-  <form action="index.html" method="post">
+  
+  
+  <main>
    
-
-    <fieldset>
+    <form action="index.html" method="post">
+     <fieldset class="container">
+        <div class="container">
         <legend>Contact Information</legend>
-        <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="user_name"><br>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" class="textinput" placeholder="Required" required>
 
-        <label for="email">Email</label><br>
-        <input type="text" id="email" name="user_email"><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="user_email" class="textinput" placeholder="Required" required>
 
-        <label for="number">Phone Number</label><br>
-        <input type="text" id="number" name="user_phone"><br>
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number" name="user_phone" class="textinput"placeholder="1-555-555-5555">
 
-        <label for="locale">City</label><br>
-        <input type="text" id="locale" name="user_city"><br>
+        <label for="locale">City</label>
+        <input type="text" id="locale" name="user_city" class="textinput">
 
-        <label for="state-menu">State</label><br>
-        <select><br>
+        <label for="state-menu">State</label>
+        <select id="state-menu" name="state-select"><br>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -88,38 +92,55 @@
 
         <label for="zipc">Zip Code</label><br>
         <input type="text" id="zipc" name="user_zipc"><br>
+    </div>
     </fieldset>
     
-     <fieldset>
-        <legend>NewsLetter</legend>
-         <p>Slect the nesletters you'd like to recieve</p>
-          
-         <label>HTML News</label><br>
-          <input type="checkbox" id="html-news" value="html_new" name="html_news"><br>
-            
-          <label>CSS News</label><br>
-          <input type="checkbox" id="css-news" value="css_new" name="css_news"><br>
+     <fieldset class="c-can">
+       <div class="c-can">
+        <legend>Newsletter</legend>
+         <p>Select the newsletters you'd like to recieve</p>
+         
+        <div class="input-field">
+          <input type="checkbox" id="html-news" value="html_new" name="html_news">
+          <label>HTML News</label>
+        </div>
 
-          <label>JavaScript News</label><br>
-          <input type="checkbox" id="javas-news" value="javas_new" name="javas_news"><br>
+        <div class="input-field">
+          <input type="checkbox" id="css-news" value="css_new" name="css_news">
+          <label>CSS News</label>
+        </div>
 
-           <label>NewsLetter Format</label><br>
+        <div class="input-field">
+          <input type="checkbox" id="javas-news" value="javas_new" name="javas_news" class="c-box">
+          <label>JavaScript News</label>
+        </div>
 
-           <label>HTML</label><br>
-           <input type="radio" id="html" value="html_news" name="html-news"><br>
+           <h3>NewsLetter Format</h3>
+        <div class="input-field"> 
+           <input type="radio" id="html" value="html_news" name="html-news">
+           <label>HTML</label>
+        </div>
 
-           <label>Plain Text</label><br>
-           <input type="radio" id="plaint" value="plaint" name="planin_t"><br>
+        <div class="input-field">
+           
+           <input type="radio" id="plaint" value="plaint" name="planin_t">
+           <label>Plain Text</label>
+         </div>
 
-           <label>Other topics you'd like to hear about?</label><br>
-           <textarea id="suggest" name="suggesty"></textarea>
-
-           <button type="submit"> Sign Up</button><br>
+         
+            <label class="suggesty">Other topics you'd like to hear about?</label>
+           <textarea id="suggest" name="suggesty"></textarea> 
+         
+        
+         <button type="submit"> Sign Up</button>
+        </div>
      </fieldset>
-    </form>  
+    </form> 
+    
     <footer>
         <h3>&#169 The Code Review</h3>
-    </footer>    
+    </footer>  
+</main>  
  </body>
 
 </html>
