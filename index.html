@@ -21,19 +21,24 @@
    
     <form action="index.html" method="post">
      <fieldset class="container">
-        <div class="container">
-        <legend>Contact Information</legend>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" class="textinput" placeholder="Required" required>
+     <div class="container">
 
+        <legend>Contact Information</legend>
+   
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name"  placeholder="Required" class="textinput" required>
+    
         <label for="email">Email</label>
         <input type="text" id="email" name="user_email" class="textinput" placeholder="Required" required>
-
+   
         <label for="number">Phone Number</label>
-        <input type="tel" id="number" name="user_phone" class="textinput"placeholder="1-555-555-5555">
-
+        <input type="tel" id="number" name="user_phone" class="textinput" placeholder="1-555-555-5555">
+     
+       
         <label for="locale">City</label>
-        <input type="text" id="locale" name="user_city" class="textinput">
+        <input type="text" id="locale" class="textinput" name="user_city" >
+        
+
 
         <label for="state-menu">State</label>
         <select id="state-menu" name="state-select"><br>
@@ -89,9 +94,10 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>
-
+       
         <label for="zipc">Zip Code</label><br>
-        <input type="text" id="zipc" name="user_zipc"><br>
+        <input type="text" id="zipc" name="user_zipc" class="textinput">
+        
     </div>
     </fieldset>
     
