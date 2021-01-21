@@ -163,7 +163,7 @@ background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: start;
     justify-content: 
 }
 
