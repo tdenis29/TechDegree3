@@ -101,6 +101,7 @@ box-shadow: 0 6px #fac934;
 border-radius: 3px;
 transition: none;
 
+
 }
 
 div .textinput {
@@ -171,8 +172,8 @@ padding-bottom: 1rem;
 }
 textarea {
 resize: none;
-margin: 0 auto;
-width: 98.5%;
+margin:0 0 2rem 0;
+width: 100%;
 height: 6rem;
 font-size: 1.125rem;
 
