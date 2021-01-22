@@ -10,6 +10,7 @@ list-style-type: none;
 }
 body {
     background-color: #fec107;
+    font-family: 'Cabin', sans-serif;
 }
 h1 {
 background-color: black;
@@ -23,11 +24,27 @@ padding: 2rem 0 2rem 0;
     display: block;
     background-color:  #fec107;
     text-align: center;
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0 2rem 0;
     width: 95%;
     max-width: 768px;
     margin: 0 auto;
     border-bottom: 4px solid black;
+   
+}
+
+.border {
+    
+width: 95%;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    max-width: 768px;
+    height: 1rem;
+}
+
+.header2 p {
+    font-size: 1.1rem;
+    padding: .5rem;
+
 }
 
 .container,
@@ -35,22 +52,11 @@ padding: 2rem 0 2rem 0;
 width: 95%;
 background-color: white;
 max-width: 768px;
-box-shadow: transparent 1px 1px;
-}
 
-select {
- display: block;
- width: 100%;
-height: 2.5rem;
-font-size: 1.125rem;
-padding-left: .5rem;
-margin-bottom: .5rem;
-border: none;
-background-color: whitesmoke;
 }
 
 fieldset {
-    border: none;
+   border: none;
     }
 
 #zipc {
@@ -61,6 +67,7 @@ legend {
     font-size: 1.4rem;
     font-weight: bold;
     padding: 1.5rem 0 1.5rem .5rem;
+    position:relative;
     }
 
 .c-can p {
@@ -73,20 +80,26 @@ footer {
     text-align: center;
     margin-bottom: 4rem;
 }
+footer h3 {
+    padding: 1rem .5rem 1rem .5rem;
+}
 
 button {
 display: block;
 text-align: center;
 margin: 0 auto;
-width: 100%;
+width: 95%;
 height: 3rem;
 background-color: #fec107;
 border: none;
+font-size: 1.5rem;
+cursor: pointer;
+box-shadow: 0 6px #fac934;
+border-radius: 3px;
+transition: none;
+
 }
 
-button:hover {
-background-color: #ffd658;
-}
 div .textinput {
     margin: .5rem;
 }
@@ -97,30 +110,39 @@ padding-top: .5rem;
 display: flex;
 flex-direction:column;
 align-items: stretch;
-border-top: solid 1px black;
+
 border-bottom: solid 4px black;
 }
-/* 
-input[type=text],
-input[type=tel]{ 
 
-/*  */
-.textinput input{
+.textinput input, select {
 display: flex;
-width: 100%;
-height: 2.5rem;
+width: 95%;
+height: 3rem;
 font-size: 1.125rem;
 padding-left: .5rem;
 background-color: whitesmoke;
 border: none;
+transition: all .5s ease-out;
+margin: .5rem;
+flex: 1;
+flex-grow:1;
 }
+
+select {
+    background-color: whitesmoke;
+    color: grey; 
+    transition: all .5s ease-out;
+}
+
 input::placeholder {
     text-align: right;
     font-style: italic;
 }
 .container label {
-    padding: .5rem 0 .5rem 0;
+    padding: .5rem .5rem .5rem .5rem;
     font-size: 1.2rem;
+    flex-shrink: 0;
+    
 }
 
 /* Radio and Check Boxes */
@@ -135,33 +157,48 @@ padding-bottom: 1rem;
 }
 
  .input-field {
-     padding: 1rem 0 1rem 0;
+     padding: 1rem .5rem 1rem .5rem;
+     transition: all .5s ease-out;
  }   
 
 .input-field label {
     padding-left: .5rem;
     font-size: 1.2rem;
+    transition: all .5s ease-out;
 }
-
 textarea {
 resize: none;
 margin-bottom: 1rem;
 width: 100%;
-height: 4rem;
+height: 6rem;
 font-size: 1.125rem;
 padding-left: .5rem;
 border: none;
 background-color: whitesmoke;
 
 }
-
 .suggesty {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem .5rem 1rem .5rem;
+    font-size: 1.2rem;
 }
 
 /* Focus States */
 
 
+.textinput input:focus, 
+.textinput input:focus,
+.textinput select:focus,
+.input-field input:focus,
+.textinput input:hover,
+.input-field input:hover {
+    border: solid 2px black;
+    background-color: rgba(104, 190, 230, 0.986)
+}
+
+button:hover {
+    background-color: #f1e0ab;
+    border: solid red 2px;
+    }
 
 
 /* Media Queries */
@@ -169,8 +206,7 @@ background-color: whitesmoke;
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    
     
     
     
@@ -178,9 +214,10 @@ background-color: whitesmoke;
 .textinput {
     display: flex;
     justify-content: flex-start;
+    
 }
 .container label {
-    width:20%;
+    flex-basis: 20%;
 }
 
 }
